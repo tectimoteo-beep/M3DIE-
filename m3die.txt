@@ -6,3 +6,6 @@ I = invariância
 
 REGRA_TESTE:
 Não inventar informação ausente.
+
+STATUS:
+Teste de carregamento externo concluído..
