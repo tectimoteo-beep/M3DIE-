@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Minha Página M3DIE</title>
+  <title>Painel M3DIE</title>
 
   <style>
     * {
@@ -13,8 +13,8 @@
     }
 
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-                   Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   Helvetica, Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -64,7 +64,7 @@
       background-color: #f8fafc;
       border-radius: 8px;
       border: 1px solid #e2e8f0;
-      white-space: pre-line;
+      white-space: pre-wrap;
       line-height: 1.7;
     }
   </style>
@@ -82,33 +82,41 @@
 
     <p id="status"></p>
 
-    <div id="conteudo">
-M3DIE_TESTE
-
-P = padrão
-V = vetor
-I = invariância
-
-REGRA_TESTE:
-Não inventar informação ausente.
-    </div>
+    <div id="conteudo"></div>
 
   </div>
 
   <script>
-    function carregarM3DIE() {
+    async function carregarM3DIE() {
 
-      const status = document.getElementById('status');
-      const conteudo = document.getElementById('conteudo');
+      const status = document.getElementById("status");
+      const conteudo = document.getElementById("conteudo");
 
       status.innerText = "Carregando conteúdo M3DIE...";
+      conteudo.style.display = "none";
 
-      setTimeout(() => {
+      try {
 
+        const resposta = await fetch("m3die.txt");
+
+        if (!resposta.ok) {
+          throw new Error("Arquivo m3die.txt não encontrado.");
+        }
+
+        const texto = await resposta.text();
+
+        conteudo.innerText = texto;
         conteudo.style.display = "block";
+
         status.innerText = "M3DIE carregado com sucesso!";
 
-      }, 1000);
+      } catch (erro) {
+
+        status.innerText = "Erro ao carregar o M3DIE.";
+        conteudo.innerText = erro.message;
+        conteudo.style.display = "block";
+
+      }
     }
   </script>
 
