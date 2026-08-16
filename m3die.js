@@ -8,10 +8,10 @@ async function carregarM3DIE() {
 
   try {
 
-    const resposta = await fetch("m3die.txt");
+    const resposta = await fetch("m3die-test.txt");
 
     if (!resposta.ok) {
-      throw new Error("Arquivo m3die.txt não encontrado.");
+      throw new Error("Arquivo m3die-test.txt não encontrado.");
     }
 
     const texto = await resposta.text();
