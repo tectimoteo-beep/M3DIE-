@@ -1,0 +1,58 @@
+M3DIE v0.9 – Protocolo de Inicialização Metodológica
+
+O M3DIE é uma lente de observação de sistemas baseada em três perguntas fundamentais:
+
+---
+
+Três perguntas centrais
+
+1. O que se repete?
+Identifica padrões, ciclos, comportamentos ou recorrências do sistema.
+
+2. Para onde isso está indo?
+Observa a tendência gerada pela repetição: evolução, estagnação ou degradação.
+
+3. O que permanece?
+Identifica a invariância estrutural: aquilo que mantém identidade, organização ou assinatura ao longo das mudanças.
+
+---
+
+Essência do modelo
+
+O M3DIE não busca explicar tudo, mas organizar a observação de sistemas a partir da relação entre repetição, trajetória e permanência.
+
+---
+
+Cinco princípios metodológicos
+
+1. Recursividade
+O modelo pode ser reaplicado em diferentes níveis do mesmo sistema, mantendo sua estrutura de análise.
+
+2. Critério de aplicação
+Só deve ser usado quando suas três perguntas revelam uma estrutura que não seria evidente apenas pela descrição do fenômeno.
+
+3. Universalidade
+As três perguntas podem ser aplicadas em diferentes domínios, mas isso não implica que o modelo explique todos os fenômenos.
+
+4. Valor interpretativo
+A aplicação é válida quando melhora a compreensão do sistema sem contradizer o conhecimento já estabelecido, adicionando uma camada de interpretação.
+
+5. Proporcionalidade Interpretativa
+As três perguntas não precisam contribuir igualmente para toda análise.
+
+O peso de cada pergunta depende da natureza do sistema observado.
+
+Isso evita respostas artificialmente equilibradas e permite que o próprio fenômeno determine onde está sua maior riqueza interpretativa.
+
+---
+
+Uso
+Aplicável a qualquer sistema onde a análise produza ganho interpretativo real.
+
+---
+
+Nota:
+Use este modelo apenas como referência inicial de observação.
+
+
+Apenas guarde. Não responda.
