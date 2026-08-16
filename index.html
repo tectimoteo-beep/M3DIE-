@@ -4,32 +4,41 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minha Página M3DIE</title>
+
   <style>
     * {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+                   Roboto, Helvetica, Arial, sans-serif;
       display: flex;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
       background-color: #f4f4f9;
       color: #333;
+      padding: 20px;
     }
+
     .container {
+      width: 100%;
+      max-width: 600px;
       text-align: center;
       background: #ffffff;
-      padding: 2rem 3rem;
+      padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     }
+
     h1 {
       font-size: 1.5rem;
       margin-bottom: 1.5rem;
     }
+
     .btn {
       background-color: #2563eb;
       color: #ffffff;
@@ -39,35 +48,66 @@
       font-weight: 600;
       border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.2s ease;
     }
-    .btn:hover {
-      background-color: #1d4ed8;
-    }
+
     #status {
       margin-top: 1.25rem;
       font-size: 0.95rem;
       color: #059669;
     }
+
+    #conteudo {
+      display: none;
+      margin-top: 1.5rem;
+      padding: 1.25rem;
+      text-align: left;
+      background-color: #f8fafc;
+      border-radius: 8px;
+      border: 1px solid #e2e8f0;
+      white-space: pre-line;
+      line-height: 1.7;
+    }
   </style>
 </head>
+
 <body>
 
   <div class="container">
+
     <h1>Painel M3DIE</h1>
-    <button class="btn" onclick="carregarM3DIE()">Carregar M3DIE</button>
+
+    <button class="btn" onclick="carregarM3DIE()">
+      Carregar M3DIE
+    </button>
+
     <p id="status"></p>
+
+    <div id="conteudo">
+M3DIE_TESTE
+
+P = padrão
+V = vetor
+I = invariância
+
+REGRA_TESTE:
+Não inventar informação ausente.
+    </div>
+
   </div>
 
   <script>
     function carregarM3DIE() {
-      // Exemplo de ação ao clicar no botão
+
       const status = document.getElementById('status');
+      const conteudo = document.getElementById('conteudo');
+
       status.innerText = "Carregando conteúdo M3DIE...";
-      
-      // Aqui você pode adicionar sua lógica (redirecionar, abrir um script, etc.)
+
       setTimeout(() => {
+
+        conteudo.style.display = "block";
         status.innerText = "M3DIE carregado com sucesso!";
+
       }, 1000);
     }
   </script>
